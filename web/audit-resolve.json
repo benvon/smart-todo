@@ -60,6 +60,56 @@
       "decision": "ignore",
       "madeAt": 1775001250000,
       "reason": "Vulnerability in picomatch (GHSA-c2c7-rcm5-vvqj) is from npm's bundled tinyglobby dependency via @semantic-release/npm. The affected path is dev-only release tooling and is not part of production runtime. npm@11.12.1 is the current latest release and still includes this advisory."
+    },
+    "1124287|@semantic-release/npm>npm>tar": {
+      "decision": "ignore",
+      "madeAt": 1755612900000,
+      "reason": "Vulnerability in tar (GHSA-r292-9mhp-454m) via npm's bundled dependency inside @semantic-release/npm. tar is only exercised during CI/CD release tooling, not at production runtime. No fix is available without a breaking downgrade of @semantic-release/npm."
+    },
+    "1124287|semantic-release>@semantic-release/npm>npm>tar": {
+      "decision": "ignore",
+      "madeAt": 1755612900000,
+      "reason": "Vulnerability in tar (GHSA-r292-9mhp-454m) via npm's bundled dependency inside @semantic-release/npm. tar is only exercised during CI/CD release tooling, not at production runtime. No fix is available without a breaking downgrade of @semantic-release/npm."
+    },
+    "1130591|brace-expansion": {
+      "decision": "ignore",
+      "madeAt": 1755612900000,
+      "reason": "Vulnerability in brace-expansion (GHSA-mh99-v99m-4gvg) is entirely within npm's own bundled dependency tree (node_modules/npm/node_modules/brace-expansion). This project does not use brace-expansion directly; it is internal to the npm CLI bundled by @semantic-release/npm and is not executed at production runtime."
+    },
+    "1130734|brace-expansion": {
+      "decision": "ignore",
+      "madeAt": 1755612900000,
+      "reason": "Vulnerability in brace-expansion (GHSA-rgw5-rvv9-x895) is entirely within npm's own bundled dependency tree (node_modules/npm/node_modules/brace-expansion). This project does not use brace-expansion directly; it is internal to the npm CLI bundled by @semantic-release/npm and is not executed at production runtime."
+    },
+    "1130716|undici": {
+      "decision": "ignore",
+      "madeAt": 1755612900000,
+      "reason": "Vulnerability in undici (GHSA-8xcm-r25x-g524) is in npm's bundled undici (node_modules/npm/node_modules/undici). The project's own undici (via @actions/http-client and @semantic-release/github) has been upgraded to a patched version. The npm-internal copy cannot be upgraded without upgrading npm itself."
+    },
+    "1130722|ip-address": {
+      "decision": "ignore",
+      "madeAt": 1755612900000,
+      "reason": "Vulnerability in ip-address (GHSA-mwp4-54f8-5fhr) is in npm's own bundled dependency tree (node_modules/npm/node_modules/ip-address). This project does not use ip-address directly; it is internal to the npm CLI and not executed at production runtime."
+    },
+    "1130723|ip-address": {
+      "decision": "ignore",
+      "madeAt": 1755612900000,
+      "reason": "Vulnerability in ip-address (GHSA-4xrf-jv44-h6hh) is in npm's own bundled dependency tree (node_modules/npm/node_modules/ip-address). This project does not use ip-address directly; it is internal to the npm CLI and not executed at production runtime."
+    },
+    "1130724|ip-address": {
+      "decision": "ignore",
+      "madeAt": 1755612900000,
+      "reason": "Vulnerability in ip-address (GHSA-22jq-vg5j-6vgg) is in npm's own bundled dependency tree (node_modules/npm/node_modules/ip-address). This project does not use ip-address directly; it is internal to the npm CLI and not executed at production runtime."
+    },
+    "1130727|undici": {
+      "decision": "ignore",
+      "madeAt": 1755612900000,
+      "reason": "Vulnerability in undici (GHSA-m8rv-5g2x-5cg5) is in npm's bundled undici (node_modules/npm/node_modules/undici). The project's own undici has been upgraded to a patched version. The npm-internal copy cannot be upgraded without upgrading npm itself."
+    },
+    "1130732|undici": {
+      "decision": "ignore",
+      "madeAt": 1755612900000,
+      "reason": "Vulnerability in undici (GHSA-v3r7-h72x-cjcm) is in npm's bundled undici (node_modules/npm/node_modules/undici). The project's own undici has been upgraded to a patched version. The npm-internal copy cannot be upgraded without upgrading npm itself."
     }
   }
 }
