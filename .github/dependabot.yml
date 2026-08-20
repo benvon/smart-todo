@@ -11,13 +11,21 @@ updates:
     directory: "/"
     patterns: ["*"]
     multi-ecosystem-group: "all-dependencies"
+    commit-message:
+      prefix: "chore"
+      prefix-development: "chore"
 
   - package-ecosystem: "github-actions"
     directory: "/"
     patterns: ["*"]
     multi-ecosystem-group: "all-dependencies"
+    commit-message:
+      prefix: "chore"
 
   - package-ecosystem: "npm"
     directory: "/web"
     patterns: ["*"]
     multi-ecosystem-group: "all-dependencies"
+    commit-message:
+      prefix: "chore"
+      prefix-development: "chore"
